@@ -40,6 +40,40 @@
         .hover-color:hover {
             color: #a62e2e; /* 悬停时的颜色 */
         }
+
+        .hover-scale {
+            display: none; /* 默认隐藏所有项目 */
+        }
+
+        .hover-scale.visible {
+            display: block; /* 通过添加类名显示项目 */
+        }
+
+        /* 按钮的样式 */
+        #see-more-btn, #see-less-btn {
+            margin-top: 20px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 18px;
+            color: #007BFF;
+            text-decoration: underline;
+            border: none;
+            background: none;
+        }
+
+        #see-more-btn:hover, #see-less-btn:hover {
+            color: #0056b3;
+        }
+
+        #see-less-btn {
+            display: none; /* "See Less" 按钮初始隐藏 */
+        }
+
+        /* 居中容器 */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
     <meta charset="utf-8"/>
     <title>Run Wang's Homepage - Wuhan University</title>
@@ -133,6 +167,52 @@
             </div>
             <div class="divider" style="width: 1140px"></div>
             <div><h2 style="font-size: 21px">Team Members</h2>
+                <div><h3 style="font-size: 20px">PhD Students</h3>
+                    <div class="w-dyn-list" style="width: 1140px">
+                        <div role="list" class="team-content w-dyn-items">
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper" style="width: 7.5rem;max-width: 7.5rem"><img alt=""
+                                                                                                             loading="lazy"
+                                                                                                             style="position: relative;top:1.0rem"
+                                                                                                             src="/static/img/QianYe.jpg"
+                                                                                                             sizes="80px"
+                                                                                                             class="avatar-large"/>
+                                    </div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2rem;top:1.0rem">Qian Ye
+                                            (Fall
+                                            2023)</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2rem;max-width: 400px;top:1.0rem">
+                                            earned her master's degree from Nanjing University of Aeronautics and
+                                            Astronautics and is currently immersed in research focused on AIGC
+                                            Security(Ph.D Co-supervision with Pro.Lina Wang).</p></div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper"
+                                         style="position:relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem"><img
+                                            alt="" loading="lazy"
+                                            style="position: relative;top:1.0rem"
+                                            src="/static/img/Yuyang Zhang.png"
+                                            sizes="70px" class="avatar-large"/></div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2.5rem;top:1.0rem"><a
+                                                class="hover-color" target="_blank" href="https://q1ngs0ng.github.io/">Yuyang
+                                            Zhang (Fall
+                                            2023)</a></h4>
+                                        <p style="font-size: 20px;position: relative;left: 2.5rem;max-width: 400px;top:1.0rem">
+                                            earned his bachelor's degree from Wuhan University and is currently immersed
+                                            in research focused on AIGC Security and Agent S&P. His academic excellence
+                                            is underscored by being a three-time recipient of national scholarships in
+                                            2019, 2022 and 2023.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div><h3 style="font-size: 20px">Master Students</h3>
                     <div class="w-dyn-list" style="width: 1140px">
                         <div role="list" class="team-content w-dyn-items">
@@ -140,7 +220,7 @@
                                 <div class="w-layout-hflex">
                                     <div class="avatar-wrapper" style="width: 7.5rem;max-width: 7.5rem"><img alt=""
                                                                                                              loading="lazy"
-                                                                                                             src="/static/img/Mengjie Wu.jpg"
+                                                                                                             src="/static/img/MengjieWu.jpg"
                                                                                                              sizes="70px"
                                                                                                              class="avatar-large"/>
                                     </div>
@@ -189,27 +269,7 @@
                                             is highlighted by his publication of a top-tier paper in AAAI'24.</p></div>
                                 </div>
                             </div>
-                            <div role="listitem" class="hover-scale w-dyn-item">
-                                <div class="w-layout-hflex">
-                                    <div class="avatar-wrapper"
-                                         style="position:relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem"><img
-                                            alt="" loading="lazy"
-                                            style="position: relative;top:1.0rem"
-                                            src="/static/img/Yuyang Zhang.png"
-                                            sizes="70px" class="avatar-large"/></div>
-                                    <div>
-                                        <h4 style="font-size: 20px;position: relative;left: 2.5rem;top:1.0rem"><a
-                                                class="hover-color" target="_blank" href="https://q1ngs0ng.github.io/">Yuyang
-                                            Zhang (Fall
-                                            2023)</a></h4>
-                                        <p style="font-size: 20px;position: relative;left: 2.5rem;max-width: 400px;top:1.0rem">
-                                            earned his bachelor's degree from Wuhan University and is currently immersed
-                                            in research focused on generative AI privacy. His academic excellence is
-                                            underscored by being a two-time recipient of national scholarships in both
-                                            2022 and 2023.</p>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div role="listitem" class="hover-scale w-dyn-item">
                                 <div class="w-layout-hflex">
                                     <div class="avatar-wrapper" style="width: 7.5rem;max-width: 7.5rem">
@@ -290,10 +350,225 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper"
+                                         style="position:relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem"><img
+                                            alt="" loading="lazy"
+                                            style="position: relative;top:3.0rem"
+                                            src="/static/img/Yuxiang Sun.jpg"
+                                            sizes="70px" class="avatar-large"/></div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2.5rem;top:3.0rem">Yuxiang
+                                            Sun(Fall
+                                            2025)</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2.5rem;max-width: 400px;top:3.0rem">
+                                            working on AI Security and Privacy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper"
+                                         style="position:relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem"><img
+                                            alt="" loading="lazy"
+                                            style="position: relative;top:3.0rem"
+                                            src="/static/img/Yanhao Wei.jpg"
+                                            sizes="70px" class="avatar-large"/></div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2.5rem;top:3.0rem">Yanhao
+                                            Wei(Fall
+                                            2025)</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2.5rem;max-width: 400px;top:3.0rem">
+                                            working on AI Security and Privacy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper"
+                                         style="position:relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem"><img
+                                            alt="" loading="lazy"
+                                            style="position: relative;top:3.0rem"
+                                            src="/static/img/Xiaokang Zhao.jpg"
+                                            sizes="70px" class="avatar-large"/></div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2.5rem;top:3.0rem">Xiaokang
+                                            Zhao(Fall
+                                            2025)</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2.5rem;max-width: 400px;top:3.0rem">
+                                            working on AI Security and Privacy.</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div style="position: relative;top: 4rem"><h3 style="font-size: 20px">Alumni</h3>
+                <div style="position: relative;top:5.5rem"><h3 style="font-size: 20px">Undergraduate Students</h3>
+                    <div class="w-dyn-list">
+                        <div role="list" class="team-content w-dyn-items" style="width: 1140px">
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper"
+                                         style="width: 7.5rem;max-width: 7.5rem;position: relative;top: 0.8rem"><img
+                                            alt=""
+                                            loading="lazy"
+                                            style=""
+                                            src="/static/img/Weifeng Liu.jpg"
+                                            sizes="80px"
+                                            class="avatar-large"/>
+                                    </div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2rem;top: 0.5rem"><a
+                                                class="hover-color"
+                                                href="https://antigonerandy.github.io/"
+                                                target="_blank">Weifeng Liu</a></h4>
+                                        <p style="font-size: 20px;position: relative;left: 2rem;max-width: 400px;top: 0.5rem">
+                                            An undergraduate student at School of Cyber Science and Engineering, Wuhan
+                                            University. My research interest lies in the Security and Privacy of
+                                            Artificial Intelligence.</p></div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper"
+                                         style="position:relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem;top: 0.5rem">
+                                        <img
+                                                alt="" loading="lazy"
+                                                src="/static/img/Tianyi Yu.jpg"
+                                                sizes="70px" class="avatar-large"/></div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2.5rem;top: 0.5rem">Tianyi
+                                            Yu</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2.5rem;max-width: 400px;top: 0.5rem">
+                                            working on AI Security and Privacy (MM’23, NeurIPS'24, National Scholarship
+                                            2022)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper" style="width: 7.5rem;max-width: 7.5rem;"><img alt=""
+                                                                                                              loading="lazy"
+                                                                                                              style="position: relative;top: 1.0rem"
+                                                                                                              src="/static/img/Yan Cai.jpg"
+                                                                                                              sizes="80px"
+                                                                                                              class="avatar-large"/>
+                                    </div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2rem;top: 2.0rem">Yan
+                                            Cai</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2rem;max-width: 400px;top: 2.0rem">
+                                            working on AI Security and Privacy (ICCV’23, National Scholarship 2023,
+                                            2024)
+                                        </p></div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper"
+                                         style="position: relative;top: 1.0rem;left:1.5rem;width: 7.5rem;max-width: 7.5rem">
+                                        <img
+                                                alt="" loading="lazy"
+                                                src="/static/img/Jiaxi Qiu.jpg"
+                                                sizes="70px" class="avatar-large"/></div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2.5rem;position: relative;top: 2.0rem">
+                                            Jiaxi Qiu</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2.5rem;max-width: 400px;position: relative;top: 2.0rem">
+                                            working on AI Security and Privacy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex" style="position: relative;top: 1rem">
+                                    <div class="avatar-wrapper" style="width: 7.5rem;max-width: 7.5rem"><img alt=""
+                                                                                                             loading="lazy"
+                                                                                                             style="position: relative;top: 2.0rem"
+                                                                                                             src="/static/img/Jie Yang.jpg"
+                                                                                                             sizes="80px"
+                                                                                                             class="avatar-large"/>
+                                    </div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2rem;top: 3.0rem">Jie Yang</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2rem;max-width: 400px;top: 3.0rem">
+                                           working on AI Security and Privacy</p></div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex" style="position: relative;top: 1rem">
+                                    <div class="avatar-wrapper"
+                                         style="position:relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem;top: 0.5rem">
+                                        <img
+                                                style="position: relative;top: 2.0rem"
+                                                alt="" loading="lazy"
+                                                src="/static/img/Leyang Wu.jpg"
+                                                sizes="70px" class="avatar-large"/></div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2.5rem;top: 3rem">Leyang Wu</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2.5rem;max-width: 400px;top: 3rem">
+                                           working on AI Security and Privacy (National Scholarship 2023, 2024)h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper"
+                                         style="width: 7.5rem;max-width: 7.5rem;position: relative;top: 5.0rem"><img
+                                            alt=""
+                                            loading="lazy"
+                                            style=""
+                                            src="/static/img/Zhenjun Lin .png"
+                                            sizes="80px"
+                                            class="avatar-large"/>
+                                    </div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2rem;top: 5.0rem"><a
+                                                class="hover-color"
+                                                href="https://antigonerandy.github.io/"
+                                                target="_blank">Zhenjun Lin</a></h4>
+                                        <p style="font-size: 20px;position: relative;left: 2rem;max-width: 400px;top: 5.0rem">
+                                            working on AI Security and Privacy</p></div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper"
+                                         style="position:relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem;top: 5.0rem">
+                                        <img
+                                                alt="" loading="lazy"
+                                                src="/static/img/Jingui Ma.png"
+                                                sizes="70px" class="avatar-large"/></div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2.5rem;top: 6.0rem">Xudong Jiang</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2.5rem;max-width: 400px;top: 6.0rem">
+                                            working on AI Security and Privacy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="hover-scale w-dyn-item">
+                                <div class="w-layout-hflex">
+                                    <div class="avatar-wrapper" style="width: 7.5rem;max-width: 7.5rem;">
+                                        <img alt=""
+                                             loading="lazy"
+                                             style="position: relative;top: 8.0rem"
+                                             src="/static/img/Jiahui Wen.jpg"
+                                             sizes="80px"
+                                             class="avatar-large"/>
+                                    </div>
+                                    <div>
+                                        <h4 style="font-size: 20px;position: relative;left: 2rem;top: 6.0rem">Jiahui Wen</h4>
+                                        <p style="font-size: 20px;position: relative;left: 2rem;max-width: 400px;top: 6.0rem">
+                                            working on AI Security and Privacy
+                                        </p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: relative;top: 16rem"><h3 style="font-size: 20px">Alumni</h3>
                     <div class="w-dyn-list" style="width: 1140px">
                         <div role="list" class="team-content w-dyn-items">
                             <div role="listitem" class="hover-scale w-dyn-item">
@@ -392,8 +667,7 @@
                                             University</p></div>
                                 </div>
                             </div>
-                            <div id="hidden-content" style="display: none" role="listitem"
-                                 class="hover-scale w-dyn-item">
+                            <div role="listitem" class="hover-scale w-dyn-item visible">
                                 <div class="w-layout-hflex">
                                     <div class="avatar-wrapper"
                                          style="width: 7.5rem;max-width: 7.5rem;position: relative;top: 1.5rem"><img
@@ -415,8 +689,7 @@
                                             Technological University, Singapore</p></div>
                                 </div>
                             </div>
-                            <div id="hidden-content-1" style="display: none" role="listitem"
-                                 class="hover-scale w-dyn-item">
+                            <div role="listitem" class="hover-scale w-dyn-item visible">
                                 <div class="w-layout-hflex">
                                     <div class="avatar-wrapper"
                                          style="position:relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem;top: 1.5rem">
@@ -433,8 +706,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="hidden-content-2" style="display: none" role="listitem"
-                                 class="hover-scale w-dyn-item">
+                            <div role="listitem" class="hover-scale w-dyn-item visible">
                                 <div class="w-layout-hflex">
                                     <div class="avatar-wrapper" style="width: 7.5rem;max-width: 7.5rem;"><img alt=""
                                                                                                               loading="lazy"
@@ -451,8 +723,7 @@
                                         </p></div>
                                 </div>
                             </div>
-                            <div id="hidden-content-3" style="display: none" role="listitem"
-                                 class="hover-scale w-dyn-item">
+                            <div role="listitem" class="hover-scale w-dyn-item visible">
                                 <div class="w-layout-hflex">
                                     <div class="avatar-wrapper"
                                          style="position: relative;top: 1.0rem;left:1.5rem;width: 7.5rem;max-width: 7.5rem">
@@ -465,14 +736,13 @@
                                             Wenhui Zhang
                                         </h4>
                                         <p style="font-size: 20px;position: relative;left: 3.0rem;max-width: 400px;position: relative;top: 2.0rem">
-                                            Undergraduate Student (Fall 2022-Fall 2024) → Mater at University of Science
-                                            and Technology of China</p>
+                                            Undergraduate Student (Fall 2022-Fall 2024) → Mater at Zhejiang
+                                            University</p>
                                     </div>
                                 </div>
                             </div>
-                            <div id="hidden-content-4" style="display: none" role="listitem"
-                                 class="hover-scale w-dyn-item">
-                                <div class="w-layout-hflex" style="position: relative;top: 1rem">
+                            <div role="listitem" class="hover-scale w-dyn-item visible">
+                                <div class="w-layout-hflex" style="position: relative;top: 2.0rem">
                                     <div class="avatar-wrapper" style="width: 7.5rem;max-width: 7.5rem"><img alt=""
                                                                                                              loading="lazy"
                                                                                                              style="position: relative;top: 0.8rem"
@@ -484,49 +754,51 @@
                                         <h4 style="font-size: 20px;position: relative;left: 2rem;top: 1.8rem">Tianyi
                                             She</h4>
                                         <p style="font-size: 20px;position: relative;left: 2rem;max-width: 400px;top: 1.8rem">
-                                            Undergraduate Student (Fall 2022-Fall 2024) → Master at Zhejiang
-                                            University</p></div>
+                                            Undergraduate Student (Fall 2022-Fall 2024) → Master at University of
+                                            Science
+                                            and Technology of China</p></div>
                                 </div>
                             </div>
-                            <div id="hidden-content-5" style="display: none" role="listitem"
-                                 class="hover-scale w-dyn-item">
-                                <div class="w-layout-hflex">
+                            <div role="listitem" class="hover-scale w-dyn-item visible">
+                                <div class="w-layout-hflex" style="position: relative;top: 1.2rem">
                                     <div class="avatar-wrapper"
                                          style="position: relative;left:1.5rem;width: 7.5rem;max-width: 7.5rem">
                                         <img alt=""
-                                              loading="lazy"
-                                              style="position: relative;top: 2.4rem"
-                                              src="/static/img/Ziheng Huang.png"
-                                              sizes="80px"
-                                              class="avatar-large"/>
+                                             loading="lazy"
+                                             style="position: relative;top: 2.4rem"
+                                             src="/static/img/Ziheng Huang.png"
+                                             sizes="80px"
+                                             class="avatar-large"/>
                                     </div>
                                     <div>
-                                        <h4 style="font-size: 20px;position: relative;left: 3rem;top: 3rem">Ziheng Huang</h4>
+                                        <h4 style="font-size: 20px;position: relative;left: 3rem;top: 3rem">Ziheng
+                                            Huang</h4>
                                         <p style="font-size: 20px;position: relative;left: 3rem;max-width: 400px;top: 3rem">
                                             Master Student (Fall 2021-Fall 2023) → Alibaba</p></div>
                                 </div>
                             </div>
-                            <div id="hidden-content-6" style="display: none" role="listitem"
-                                 class="hover-scale w-dyn-item">
+                            <div role="listitem" class="hover-scale w-dyn-item visible">
                                 <div class="w-layout-hflex">
                                     <div class="avatar-wrapper"
-                                         style="position:relative;left:0.0rem;width: 7.5rem;max-width: 7.5rem;top: 3.5rem"><img
-                                            alt="" loading="lazy"
-                                            src="/static/img/Jixing Ren.png"
-                                            sizes="70px" class="avatar-large"/></div>
+                                         style="position:relative;left:0.0rem;width: 7.5rem;max-width: 7.5rem;top: 3.5rem">
+                                        <img
+                                                alt="" loading="lazy"
+                                                src="/static/img/Jixing Ren.png"
+                                                sizes="70px" class="avatar-large"/></div>
                                     <div>
-                                        <h4 style="font-size: 20px;position: relative;left: 2.0rem;top: 4.5rem">Jixing Ren</h4>
+                                        <h4 style="font-size: 20px;position: relative;left: 2.0rem;top: 4.5rem">Jixing
+                                            Ren</h4>
                                         <p style="font-size: 20px;position: relative;left: 2.0rem;top: 4.5rem;max-width: 400px">
-                                             Master Student (Fall 2021-Fall 2023) → PhD at Huazhong University of Technology</p>
+                                            Master Student (Fall 2021-Fall 2023) → PhD at Huazhong University of
+                                            Technology</p>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div role="navigation" aria-label="List" class="w-pagination-wrapper">
-                            <div id="see-more" class="w-inline-block"
-                                 style="position:relative;top:5rem;color: #003f85;font-size: 22px">See More
-                            </div>
+                        <!-- 按钮容器 -->
+                        <div class="button-container" style="position: relative; top: 4rem;">
+                            <span id="see-more-btn" style="font-size: 22px">See More</span>
+                            <span id="see-less-btn" style="font-size: 22px">See Less</span>
                         </div>
                     </div>
                 </div>
@@ -534,73 +806,47 @@
         </div>
     </div>
 </section>
-<section class="footer" style="position: relative;width: 100%;left: 0;top: 8rem">
+<section class="footer" style="position: relative;width: 100%;left: 0;top: 16rem">
     <div class="footer-copyright-wrapper">
         <div class="footer-copyright">Copyright © S2PE Lab.</div>
         <div class="footer-copyright">Designed and Developed by Zhihao Peng.</div>
     </div>
 </section>
 <script>
-    var seeMoreButton = document.getElementById('see-more');
-    var hiddenContent = document.getElementById('hidden-content');
-    var hiddenContent_1 = document.getElementById('hidden-content-1');
-    var hiddenContent_2 = document.getElementById('hidden-content-2');
-    var hiddenContent_3 = document.getElementById('hidden-content-3');
-    var hiddenContent_4 = document.getElementById('hidden-content-4');
-    var hiddenContent_5 = document.getElementById('hidden-content-5');
-    var hiddenContent_6 = document.getElementById('hidden-content-6');
+    // JavaScript 实现显示更多和显示更少功能
+    const items = document.querySelectorAll('.hover-scale');
+    const seeMoreBtn = document.getElementById('see-more-btn');
+    const seeLessBtn = document.getElementById('see-less-btn');
 
-    seeMoreButton.addEventListener('click', function () {
-        if (hiddenContent.style.display === 'none') {
-            hiddenContent.style.display = 'block'; // 显示隐藏的内容
-            seeMoreButton.innerText = 'See Less'; // 将按钮文本改为 "See Less"
-        } else {
-            hiddenContent.style.display = 'none'; // 隐藏内容
-            seeMoreButton.innerText = 'See More'; // 将按钮文本改为 "See More"
-        }
-        if (hiddenContent_1.style.display === 'none') {
-            hiddenContent_1.style.display = 'block'; // 显示隐藏的内容
-            seeMoreButton.innerText = 'See Less'; // 将按钮文本改为 "See Less"
-        } else {
-            hiddenContent_1.style.display = 'none'; // 隐藏内容
-            seeMoreButton.innerText = 'See More'; // 将按钮文本改为 "See More"
-        }
-        if (hiddenContent_2.style.display === 'none') {
-            hiddenContent_2.style.display = 'block'; // 显示隐藏的内容
-            seeMoreButton.innerText = 'See Less'; // 将按钮文本改为 "See Less"
-        } else {
-            hiddenContent_2.style.display = 'none'; // 隐藏内容
-            seeMoreButton.innerText = 'See More'; // 将按钮文本改为 "See More"
-        }
-        if (hiddenContent_3.style.display === 'none') {
-            hiddenContent_3.style.display = 'block'; // 显示隐藏的内容
-            seeMoreButton.innerText = 'See Less'; // 将按钮文本改为 "See Less"
-        } else {
-            hiddenContent_3.style.display = 'none'; // 隐藏内容
-            seeMoreButton.innerText = 'See More'; // 将按钮文本改为 "See More"
-        }
-        if (hiddenContent_4.style.display === 'none') {
-            hiddenContent_4.style.display = 'block'; // 显示隐藏的内容
-            seeMoreButton.innerText = 'See Less'; // 将按钮文本改为 "See Less"
-        } else {
-            hiddenContent_4.style.display = 'none'; // 隐藏内容
-            seeMoreButton.innerText = 'See More'; // 将按钮文本改为 "See More"
-        }
-        if (hiddenContent_5.style.display === 'none') {
-            hiddenContent_5.style.display = 'block'; // 显示隐藏的内容
-            seeMoreButton.innerText = 'See Less'; // 将按钮文本改为 "See Less"
-        } else {
-            hiddenContent_5.style.display = 'none'; // 隐藏内容
-            seeMoreButton.innerText = 'See More'; // 将按钮文本改为 "See More"
-        }
-        if (hiddenContent_6.style.display === 'none') {
-            hiddenContent_6.style.display = 'block'; // 显示隐藏的内容
-            seeMoreButton.innerText = 'See Less'; // 将按钮文本改为 "See Less"
-        } else {
-            hiddenContent_6.style.display = 'none'; // 隐藏内容
-            seeMoreButton.innerText = 'See More'; // 将按钮文本改为 "See More"
-        }
+    let visibleCount = 23; // 默认显示3个项目
+
+    // 初始化，显示前3个项目
+    function showInitialItems() {
+        items.forEach((item, index) => {
+            if (index < visibleCount) {
+                item.classList.add('visible');
+            } else {
+                item.classList.remove('visible');
+            }
+        });
+    }
+
+    // 显示更多项目
+    seeMoreBtn.addEventListener('click', () => {
+        items.forEach(item => item.classList.add('visible')); // 显示所有项目
+        seeMoreBtn.style.display = 'none'; // 隐藏“See More”按钮
+        seeLessBtn.style.display = 'inline'; // 显示“See Less”按钮
     });
+
+    // 显示更少项目
+    seeLessBtn.addEventListener('click', () => {
+        showInitialItems(); // 只显示前3个项目
+        seeMoreBtn.style.display = 'inline'; // 显示“See More”按钮
+        seeLessBtn.style.display = 'none'; // 隐藏“See Less”按钮
+    });
+
+    // 页面加载时初始化
+    showInitialItems();
 </script>
 <script>
     function backToTop() {
